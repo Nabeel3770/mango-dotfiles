@@ -1,0 +1,9 @@
+:root {
+    --background: rgb({{colors.background.default.rgb_values}});
+    --surface: rgb({{colors.surface.default.rgb_values}});
+    --surface-variant: rgb({{colors.surface_variant.default.rgb_values}});
+    --primary: rgb({{colors.primary.default.rgb_values}});
+    --on-primary: rgb({{colors.on_primary.default.rgb_values}});
+    --outline: rgb({{colors.outline.default.rgb_values}});
+    --error: rgb({{colors.error.default.rgb_values}});
+}

@@ -1,0 +1,125 @@
+configuration {
+    modi:                       "drun,run,filebrowser";
+    show-icons:                 true;
+    display-drun:               "󰣇 ";
+    display-run:                " ";
+    display-filebrowser:        "󰉋 ";
+    drun-display-format:        "{name}";
+    window-format:              "{w} · {c} · {t}";
+    font:                       "JetBrainsMono Nerd Font 11";
+    icon-theme:                 "Papirus";
+}
+
+@import "colors.rasi"
+
+* {
+    background-color:           transparent;
+    text-color:                 @fg;
+}
+
+window {
+    transparency:               "real";
+    location:                   center;
+    anchor:                     center;
+    fullscreen:                 false;
+    width:                      600px;
+    x-offset:                   0px;
+    y-offset:                   0px;
+
+    enabled:                    true;
+    margin:                     0px;
+    padding:                    0px;
+    border:                     2px;
+    border-color:               @outlinecol;
+    border-radius:              24px;
+    background-color:           @bg;
+    cursor:                     "default";
+}
+
+mainbox {
+    enabled:                    true;
+    spacing:                    16px;
+    margin:                     0px;
+    padding:                    24px;
+    children:                   [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled:                    true;
+    spacing:                    12px;
+    margin:                     0px;
+    padding:                    10px 16px;
+    border:                     2px;
+    border-color:               @outlinecol;
+    border-radius:              32px;
+    background-color:           @bg;
+    children:                   [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled:                    true;
+    text-color:                 @accent;
+}
+
+entry {
+    enabled:                    true;
+    cursor:                     text;
+    placeholder:                "Search applications...";
+    placeholder-color:          @variant;
+}
+
+listview {
+    enabled:                    true;
+    columns:                    1;
+    lines:                      7;
+    cycle:                      true;
+    dynamic:                    true;
+    scrollbar:                  false;
+    layout:                     vertical;
+    reverse:                    false;
+    fixed-height:               true;
+    fixed-columns:              true;
+    
+    spacing:                    6px;
+    margin:                     0px;
+    padding:                    0px;
+    cursor:                     "default";
+}
+
+element {
+    enabled:                    true;
+    spacing:                    12px;
+    margin:                     0px;
+    padding:                    8px 12px;
+    border-radius:              32px;
+    border:                     2px;
+    border-color:               transparent;
+    cursor:                     pointer;
+}
+
+element normal.normal {
+    background-color:           transparent;
+    text-color:                 @fg;
+}
+
+element selected.normal {
+    background-color:           @accent;
+    text-color:                 @accenttxt;
+}
+
+element alternate.normal {
+    background-color:           transparent;
+    text-color:                 @fg;
+}
+
+element-icon {
+    size:                       24px;
+    cursor:                     inherit;
+}
+
+element-text {
+    text-color:                 inherit;
+    cursor:                     inherit;
+    vertical-align:             0.5;
+    horizontal-align:           0.0;
+}

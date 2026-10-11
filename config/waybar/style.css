@@ -1,0 +1,105 @@
+@import "colors.css";
+* {
+    font-family: "JetBrainsMono Nerd Font", "Ubuntu Nerd Font", sans-serif;
+    font-size: 14px;
+    border: none;
+    min-height: 0;
+}
+window#waybar {
+    background-color: transparent;
+    color: @on_surface;
+}
+#workspaces {
+    background-color: @surface;
+    border: 2px solid @outline;
+    border-radius: 32px;
+    padding: 2px 8px;
+    margin: 4px 0px;
+}
+#workspaces button {
+    color: @on_surface_variant;
+    border-radius: 24px;
+    padding: 0px 6px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+#workspaces button.active,
+#workspaces button.focused {
+    color: @primary;
+}
+#workspaces button:hover {
+    color: @primary;
+    background-color: transparent;
+}
+#workspaces button.urgent {
+    color: @error;
+}
+#custom-logo,
+#custom-mpris,
+#clock,
+#pulseaudio,
+#custom-notifications,
+#custom-power,
+#tray {
+    background-color: @surface;
+    border: 2px solid @outline;
+    color: @on_surface;
+    border-radius: 32px;
+    padding: 4px 14px;
+    margin: 4px 0px;
+    transition: all 0.2s ease-in-out;
+}
+#custom-logo {
+    color: @primary;
+    font-weight: bold;
+}
+#custom-mpris.empty {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#custom-power {
+    color: @error;
+}
+#custom-logo:hover,
+#custom-mpris:hover,
+#clock:hover,
+#pulseaudio:hover,
+#custom-notifications:hover,
+#custom-power:hover,
+#tray:hover {
+    background-color: @primary;
+    color: @on_primary;
+}
+tooltip {
+    background-color: @surface;
+    border: 2px solid @outline;
+    border-radius: 16px;
+}
+tooltip label {
+    color: @on_surface;
+    padding: 8px 14px;
+}
+window#waybar.bottom {
+    background-color: transparent;
+}
+#custom-vesktop,
+#custom-tauon,
+#custom-steam {
+    background-color: @surface;
+    border: 2px solid @outline;
+    color: @on_surface;
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 14px;
+    margin: 4px 2px;
+    transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+#custom-vesktop:hover,
+#custom-tauon:hover,
+#custom-steam:hover {
+    background: @primary;
+    color: @on_primary;
+    border-color: @primary;
+}

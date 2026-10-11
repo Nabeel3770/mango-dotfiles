@@ -1,0 +1,68 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  background-image: none;
+  box-shadow: none;
+  outline: none;
+  transition: 160ms ease;
+}
+
+window {
+  background: rgba({{colors.shadow.default.red}}, {{colors.shadow.default.green}}, {{colors.shadow.default.blue}}, 0.55);
+}
+
+button {
+  background-color: rgba({{colors.surface_container_high.default.red}}, {{colors.surface_container_high.default.green}}, {{colors.surface_container_high.default.blue}}, 0.88);
+
+  border-radius: 30px;
+
+  border: 2px solid rgba({{colors.outline_variant.default.red}}, {{colors.outline_variant.default.green}}, {{colors.outline_variant.default.blue}}, 0.22);
+
+  margin: 18px;
+  padding: 24px 24px 16px 24px;
+
+  color: rgba({{colors.on_surface.default.red}}, {{colors.on_surface.default.green}}, {{colors.on_surface.default.blue}}, 0.92);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  background-repeat: no-repeat;
+  background-position: center 34%;
+  background-size: 72px;
+
+  min-width: 190px;
+  min-height: 150px;
+}
+
+button label {
+  margin-top: 92px;
+}
+
+button:hover {
+  background-color: rgba({{colors.primary_container.default.red}}, {{colors.primary_container.default.green}}, {{colors.primary_container.default.blue}}, 0.34);
+
+  border: 2px solid rgba({{colors.primary.default.red}}, {{colors.primary.default.green}}, {{colors.primary.default.blue}}, 0.42);
+}
+
+#lock {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/reboot.png"));
+}

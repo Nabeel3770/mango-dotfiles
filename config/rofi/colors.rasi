@@ -1,0 +1,8 @@
+* {
+    bg:          #191113;
+    fg:          #efdfe1;
+    accent:      #ffb1c8;
+    accenttxt:   #541d32;
+    outlinecol:  #9e8c90;
+    variant:     #d5c2c6;
+}

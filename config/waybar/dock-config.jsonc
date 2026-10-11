@@ -1,0 +1,22 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 56,
+  "spacing": 0,
+  "modules-center": ["custom/vesktop", "custom/tauon", "custom/steam"],
+  "custom/vesktop": {
+    "format": "󰙯 ",
+    "on-click": "vesktop",
+    "tooltip": false
+  },
+  "custom/tauon": {
+    "format": "󰝚 ",
+    "on-click": "tauon",
+    "tooltip": false
+  },
+  "custom/steam": {
+    "format": "󰓓 ",
+    "on-click": "steam",
+    "tooltip": false
+  }
+}

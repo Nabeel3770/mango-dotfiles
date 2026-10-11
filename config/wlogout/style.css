@@ -1,0 +1,68 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  background-image: none;
+  box-shadow: none;
+  outline: none;
+  transition: 160ms ease;
+}
+
+window {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+button {
+  background-color: rgba(49, 40, 42, 0.88);
+
+  border-radius: 30px;
+
+  border: 2px solid rgba(81, 67, 71, 0.22);
+
+  margin: 18px;
+  padding: 24px 24px 16px 24px;
+
+  color: rgba(239, 223, 225, 0.92);
+
+  font-size: 16px;
+  font-weight: 700;
+
+  background-repeat: no-repeat;
+  background-position: center 34%;
+  background-size: 72px;
+
+  min-width: 190px;
+  min-height: 150px;
+}
+
+button label {
+  margin-top: 92px;
+}
+
+button:hover {
+  background-color: rgba(112, 51, 72, 0.34);
+
+  border: 2px solid rgba(255, 177, 200, 0.42);
+}
+
+#lock {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+  background-image: image(url("/home/pixy/.config/wlogout/icons/reboot.png"));
+}

@@ -1,0 +1,228 @@
+@import "colors.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.control-center {
+  background: @surface;
+  color: @on_surface;
+
+  border-radius: 24px;
+  border: 1px solid alpha(@outline, 0.20);
+
+  padding: 18px;
+  margin: 8px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.blank-window,
+.background,
+.notification-row,
+.floating-notifications {
+  background: transparent;
+}
+
+.notification-background {
+  background: transparent;
+}
+
+.notification-group {
+  background: transparent;
+}
+
+.notification {
+  background: alpha(@surface_container_high, 0.94);
+
+  color: @on_surface;
+
+  border-radius: 18px;
+  border: 1px solid alpha(@outline_variant, 0.14);
+
+  padding: 14px;
+  margin: 8px 0;
+}
+
+.notification-content {
+  background: transparent;
+}
+
+.notification-default-action {
+  background: transparent;
+  border-radius: 16px;
+}
+
+.notification-default-action:hover {
+  background: alpha(@primary, 0.08);
+}
+
+.summary {
+  color: @on_surface;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.body {
+  color: @on_surface_variant;
+  margin-top: 4px;
+  line-height: 1.45;
+}
+
+.time {
+  color: alpha(@on_surface_variant, 0.65);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.widget-title {
+  color: @primary;
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+.widget-title button {
+  min-width: 22px;
+  min-height: 22px;
+
+  border-radius: 999px;
+
+  background: transparent;
+  color: @on_surface_variant;
+}
+
+.widget-title button:hover {
+  background: alpha(@primary, 0.10);
+  color: @primary;
+}
+
+.widget-dnd {
+  margin-bottom: 14px;
+}
+
+switch {
+  background: alpha(@surface_container_high, 0.85);
+
+  border-radius: 999px;
+
+  min-width: 42px;
+  min-height: 24px;
+}
+
+switch:checked {
+  background: @primary;
+}
+
+switch slider {
+  background: @on_surface;
+
+  border-radius: 999px;
+
+  min-width: 18px;
+  min-height: 18px;
+
+  margin: 3px;
+}
+
+.widget-mpris {
+  background: alpha(@surface_container_high, 0.88);
+
+  border-radius: 20px;
+
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.widget-mpris-player {
+  padding: 4px;
+}
+
+.widget-volume {
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+
+scale {
+  margin: 6px 0;
+}
+
+scale trough {
+  background: alpha(@surface_container_highest, 0.75);
+
+  min-height: 8px;
+  border-radius: 999px;
+}
+
+scale highlight {
+  background: @primary;
+
+  border-radius: 999px;
+}
+
+scale slider {
+  background: @on_primary;
+
+  min-width: 14px;
+  min-height: 14px;
+
+  border-radius: 999px;
+}
+
+button {
+  background: alpha(@surface_container_high, 0.75);
+
+  color: @on_surface;
+
+  border-radius: 14px;
+
+  padding: 8px 12px;
+}
+
+button:hover {
+  background: alpha(@primary, 0.14);
+  color: @primary;
+}
+
+.close-button {
+  background: transparent;
+
+  color: @on_surface_variant;
+
+  border-radius: 999px;
+
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  background: alpha(@error, 0.18);
+  color: @error;
+}
+
+.low {
+  border-left: 3px solid alpha(@outline, 0.45);
+}
+
+.normal {
+  border-left: 3px solid alpha(@primary, 0.85);
+}
+
+.critical {
+  border-left: 3px solid alpha(@error, 0.85);
+}
+
+scrollbar,
+scrollbar * {
+  opacity: 0;
+  min-width: 0;
+  min-height: 0;
+  background: transparent;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "label": "lock",
+    "action": "hyprlock",
+    "img": "/home/pixy/.config/wlogout/icons/lock.png"
+  },
+  {
+    "label": "logout",
+    "action": "pkill -KILL -u $USER",
+    "img": "/home/pixy/.config/wlogout/icons/logout.png"
+  },
+  {
+    "label": "suspend",
+    "action": "systemctl suspend",
+    "img": "/home/pixy/.config/wlogout/icons/suspend.png"
+  },
+  {
+    "label": "hibernate",
+    "action": "systemctl hibernate",
+    "img": "/home/pixy/.config/wlogout/icons/hibernate.png"
+  },
+  {
+    "label": "shutdown",
+    "action": "systemctl poweroff",
+    "img": "/home/pixy/.config/wlogout/icons/shutdown.png"
+  },
+  {
+    "label": "reboot",
+    "action": "systemctl reboot",
+    "img": "/home/pixy/.config/wlogout/icons/reboot.png"
+  }
+]

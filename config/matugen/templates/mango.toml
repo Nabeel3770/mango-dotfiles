@@ -1,0 +1,4 @@
+focuscolor = 0x{{ colors.primary.default.hex | replace: "#", "" }}ff
+bordercolor = 0x{{ colors.surface_variant.default.hex | replace: "#", "" }}ff
+urgentcolor = 0x{{ colors.error.default.hex | replace: "#", "" }}ff
+rootcolor = 0x{{ colors.primary.default.hex | replace: "#", "" }}ff

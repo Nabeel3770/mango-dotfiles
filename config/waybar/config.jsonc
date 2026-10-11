@@ -1,0 +1,80 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 6,
+  "reload_style_on_change": true,
+
+  "modules-left": [
+    "custom/logo",
+    "custom/mpris",
+    "ext/workspaces"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "tray",
+    "custom/notifications",
+    "custom/power"
+  ],
+
+  "custom/logo": {
+    "format": "󰣇   MangoWM",
+    "tooltip": false,
+    "on-click": "pkill rofi || rofi -show drun",
+    "on-click-right": "kitty"
+  },
+
+  "custom/mpris": {
+    "exec": "playerctl -p tauon metadata --format '{{title}}' 2>/dev/null || echo ''",
+    "on-click": "playerctl -p tauon play-pause",
+    "on-click-right": "playerctl -p tauon next",
+    "on-click-middle": "playerctl -p tauon previous",
+    "interval": 2,
+    "format": "  {}",
+    "max-length": 20,
+    "format-empty": ""
+  },
+
+  "ext/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": " ",
+      "default": " "
+    },
+    "ignore-hidden": true,
+    "on-click": "activate",
+    "on-click-right": "deactivate",
+    "sort-by-id": true
+  },
+
+  "clock": {
+    "format": "󱑂 {:%I:%M %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": " ",
+    "on-click": "pavucontrol"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+
+  "custom/notifications": {
+    "format": " ",
+    "on-click": "swaync-client -t -sw",
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "format": " ",
+    "on-click": "wlogout"
+  }
+}
